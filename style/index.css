@@ -48,6 +48,11 @@ table {
 	border-spacing: 0;
 }
 
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 h1{
 font-size: 3rem;
 padding: 1.2rem;
@@ -81,7 +86,7 @@ border: white solid 1px;
 }
 
 .links{
-    width: 30%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -96,7 +101,6 @@ border: white solid 1px;
 
 .about{
     display: flex;
-    
 }
 
 .about_text{
@@ -109,7 +113,8 @@ border: white solid 1px;
 }
 
 .about_text>a{
-    width: 10%;
+    width: 100%;
+    background-color: grey;
 }
 
 .projects1{
@@ -138,3 +143,43 @@ footer{
 footer nav{
     margin-top: .7rem;
 }
+
+@media (max-width: 800px) {
+
+    .links{
+        width: 100%;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .projects1 {
+        width: 100%;
+    }
+
+    .projects1 div{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        width:70%;
+    }
+
+    .projects2 {
+        width: 100%;
+    }
+
+    .projects2 div{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        width:70%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
