@@ -113,7 +113,8 @@ border: white solid 1px;
 }
 
 .about_text>a{
-    width: 10%;
+    width: 100%;
+    background-color: grey;
 }
 
 .projects1{
